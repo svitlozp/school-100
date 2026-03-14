@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Головна - Запорізька школа №100</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .bento-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-blue-900">Школа №100</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="index.html" class="text-blue-900 font-semibold">Головна</a>
+                <a href="about.html" class="hover:text-blue-900">Про школу</a>
+                <a href="education.html" class="hover:text-blue-900">Освітній процес</a>
+                <a href="parents-students.html" class="hover:text-blue-900">Батькам та учням</a>
+                <a href="contacts.html" class="hover:text-blue-900">Контакти</a>
+            </div>
+            <button class="md:hidden" id="mobile-menu-button">
+                <i data-lucide="menu"></i>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="index.html" class="block py-2 text-blue-900 font-semibold">Головна</a>
+            <a href="about.html" class="block py-2 hover:text-blue-900">Про школу</a>
+            <a href="education.html" class="block py-2 hover:text-blue-900">Освітній процес</a>
+            <a href="parents-students.html" class="block py-2 hover:text-blue-900">Батькам та учням</a>
+            <a href="contacts.html" class="block py-2 hover:text-blue-900">Контакти</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-8">
+        <!-- Hero Section -->
+        <section class="bg-blue-900 text-white rounded-lg p-12 text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Запорізька школа №100</h1>
+            <p class="text-lg md:text-xl text-yellow-400">Ваше майбутнє починається тут</p>
+        </section>
+
+        <!-- Latest News (Bento Grid) -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-center mb-8">Останні новини</h2>
+            <div class="bento-grid">
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                    <h3 class="font-bold text-lg mb-2">День знань</h3>
+                    <p class="text-sm">Святкова лінійка та перші уроки у новому навчальному році.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                    <h3 class="font-bold text-lg mb-2">Перемога в олімпіаді</h3>
+                    <p class="text-sm">Наші учні здобули перемогу на міській олімпіаді з математики.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                    <h3 class="font-bold text-lg mb-2">Спортивні змагання</h3>
+                    <p class="text-sm">Відбувся щорічний спортивний фестиваль серед учнів 5-11 класів.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                    <h3 class="font-bold text-lg mb-2">Екскурсія до музею</h3>
+                    <p class="text-sm">Учні 7-х класів відвідали краєзнавчий музей.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Links -->
+        <section class="mb-12">
+            <div class="flex flex-col md:flex-row gap-8">
+                <a href="education.html" class="bg-yellow-400 text-blue-900 p-8 rounded-lg text-center flex-1 hover:bg-yellow-500 transition-colors">
+                    <i data-lucide="laptop" class="mx-auto mb-2"></i>
+                    <h3 class="text-xl font-bold">Дистанційне навчання</h3>
+                </a>
+                <a href="education.html#schedule" class="bg-yellow-400 text-blue-900 p-8 rounded-lg text-center flex-1 hover:bg-yellow-500 transition-colors">
+                    <i data-lucide="calendar-days" class="mx-auto mb-2"></i>
+                    <h3 class="text-xl font-bold">Розклад</h3>
+                </a>
+            </div>
+        </section>
+
+        <!-- Photo Gallery Preview -->
+        <section>
+            <h2 class="text-3xl font-bold text-center mb-8">Фотогалерея</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <img src="https://via.placeholder.com/400x300" alt="Фото 1" class="rounded-lg shadow-md">
+                <img src="https://via.placeholder.com/400x300" alt="Фото 2" class="rounded-lg shadow-md">
+                <img src="https://via.placeholder.com/400x300" alt="Фото 3" class="rounded-lg shadow-md">
+                <img src="https://via.placeholder.com/400x300" alt="Фото 4" class="rounded-lg shadow-md">
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white mt-12">
+        <div class="container mx-auto px-6 py-8 grid md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-xl font-bold mb-4">Школа №100</h3>
+                <p>Освітній простір для вашого майбутнього.</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-4">Швидкі посилання</h3>
+                <ul>
+                    <li><a href="about.html" class="hover:text-yellow-400">Про школу</a></li>
+                    <li><a href="education.html" class="hover:text-yellow-400">Освітній процес</a></li>
+                    <li><a href="parents-students.html" class="hover:text-yellow-400">Батькам та учням</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-4">Слідкуйте за нами</h3>
+                <div class="flex space-x-4">
+                    <a href="#" class="hover:text-yellow-400"><i data-lucide="facebook"></i></a>
+                    <a href="#" class="hover:text-yellow-400"><i data-lucide="instagram"></i></a>
+                    <a href="#" class="hover:text-yellow-400"><i data-lucide="youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="bg-blue-950 text-center py-4">
+            <p>&copy; 2024 Запорізька школа №100. Всі права захищені.</p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>
