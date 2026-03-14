@@ -3,124 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Про школу - Запорізька школа №100</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <title>Про школу - Назва вашої школи</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-gray-100 text-gray-800">
-
-    <!-- Header -->
-    <header class="bg-white shadow-md sticky top-0 z-50">
-        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-bold text-blue-900">Школа №100</a>
-            <div class="hidden md:flex space-x-6">
-                <a href="index.html" class="hover:text-blue-900">Головна</a>
-                <a href="about.html" class="text-blue-900 font-semibold">Про школу</a>
-                <a href="education.html" class="hover:text-blue-900">Освітній процес</a>
-                <a href="parents-students.html" class="hover:text-blue-900">Батькам та учням</a>
-                <a href="contacts.html" class="hover:text-blue-900">Контакти</a>
-            </div>
-            <button class="md:hidden" id="mobile-menu-button">
-                <i data-lucide="menu"></i>
-            </button>
-        </nav>
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
-            <a href="index.html" class="block py-2 hover:text-blue-900">Головна</a>
-            <a href="about.html" class="block py-2 text-blue-900 font-semibold">Про школу</a>
-            <a href="education.html" class="block py-2 hover:text-blue-900">Освітній процес</a>
-            <a href="parents-students.html" class="block py-2 hover:text-blue-900">Батькам та учням</a>
-            <a href="contacts.html" class="block py-2 hover:text-blue-900">Контакти</a>
-        </div>
-    </header>
-
-    <!-- Main Content -->
-    <main class="container mx-auto px-6 py-8">
-        <h1 class="text-4xl font-bold text-center mb-12">Про нашу школу</h1>
-
-        <!-- History Section -->
-        <section class="mb-12 bg-white p-8 rounded-lg shadow-md">
-            <h2 class="text-3xl font-bold mb-6">Історія школи</h2>
-            <p class="mb-4">Запорізька школа №100 була заснована у 1965 році. З того часу ми пройшли довгий шлях розвитку та модернізації, ставши одним із провідних навчальних закладів міста. Наша місія - надавати якісну освіту та створювати сприятливі умови для всебічного розвитку кожного учня.</p>
-            <p>Ми пишаємося нашими випускниками, серед яких багато відомих вчених, лікарів, інженерів та митців.</p>
-        </section>
-
-        <!-- Administration Section -->
-        <section class="mb-12">
-            <h2 class="text-3xl font-bold text-center mb-8">Адміністрація</h2>
-            <div class="grid md:grid-cols-3 gap-8 text-center">
-                <!-- Principal -->
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <img src="https://via.placeholder.com/150" alt="Директор" class="w-32 h-32 rounded-full mx-auto mb-4">
-                    <h3 class="text-xl font-bold">Іванова Марія Іванівна</h3>
-                    <p class="text-yellow-600">Директор</p>
-                </div>
-                <!-- Vice Principal -->
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <img src="https://via.placeholder.com/150" alt="Заступник директора" class="w-32 h-32 rounded-full mx-auto mb-4">
-                    <h3 class="text-xl font-bold">Петренко Василь Петрович</h3>
-                    <p class="text-yellow-600">Заступник директора з навчально-виховної роботи</p>
-                </div>
-                <!-- Vice Principal -->
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <img src="https://via.placeholder.com/150" alt="Заступник директора" class="w-32 h-32 rounded-full mx-auto mb-4">
-                    <h3 class="text-xl font-bold">Сидоренко Ганна Василівна</h3>
-                    <p class="text-yellow-600">Заступник директора з виховної роботи</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Documents Section -->
-        <section class="bg-white p-8 rounded-lg shadow-md">
-            <h2 class="text-3xl font-bold mb-6">Офіційні документи</h2>
-            <ul class="list-disc list-inside space-y-2">
-                <li><a href="#" class="text-blue-900 hover:underline flex items-center"><i data-lucide="file-text" class="mr-2"></i>Статут школи (PDF)</a></li>
-                <li><a href="#" class="text-blue-900 hover:underline flex items-center"><i data-lucide="file-text" class="mr-2"></i>Ліцензія на освітню діяльність (PDF)</a></li>
-                <li><a href="#" class="text-blue-900 hover:underline flex items-center"><i data-lucide="file-text" class="mr-2"></i>Річний звіт директора (PDF)</a></li>
+<body>
+    <header>
+        <h1>Назва вашої школи</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="about.html">Про школу</a></li>
+                <li><a href="contacts.html">Контакти</a></li>
             </ul>
-        </section>
+        </nav>
+    </header>
+    <main>
+        <h2>Про нашу школу</h2>
+        <p>Тут буде інформація про історію, місію та цінності вашої школи.</p>
     </main>
-
-    <!-- Footer -->
-    <footer class="bg-blue-900 text-white mt-12">
-        <div class="container mx-auto px-6 py-8 grid md:grid-cols-3 gap-8">
-            <div>
-                <h3 class="text-xl font-bold mb-4">Школа №100</h3>
-                <p>Освітній простір для вашого майбутнього.</p>
-            </div>
-            <div>
-                <h3 class="text-xl font-bold mb-4">Швидкі посилання</h3>
-                <ul>
-                    <li><a href="about.html" class="hover:text-yellow-400">Про школу</a></li>
-                    <li><a href="education.html" class="hover:text-yellow-400">Освітній процес</a></li>
-                    <li><a href="parents-students.html" class="hover:text-yellow-400">Батькам та учням</a></li>
-                </ul>
-            </div>
-            <div>
-                <h3 class="text-xl font-bold mb-4">Слідкуйте за нами</h3>
-                <div class="flex space-x-4">
-                    <a href="#" class="hover:text-yellow-400"><i data-lucide="facebook"></i></a>
-                    <a href="#" class="hover:text-yellow-400"><i data-lucide="instagram"></i></a>
-                    <a href="#" class="hover:text-yellow-400"><i data-lucide="youtube"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="bg-blue-950 text-center py-4">
-            <p>&copy; 2024 Запорізька школа №100. Всі права захищені.</p>
-        </div>
+    <footer>
+        <p>&copy; 2024 Назва вашої школи. Всі права захищено.</p>
     </footer>
-
-    <script>
-        lucide.createIcons();
-
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-    </script>
-
 </body>
 </html>

@@ -3,133 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Батькам та учням - Запорізька школа №100</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <title>Батькам та учням - Назва вашої школи</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-gray-100 text-gray-800">
-
-    <!-- Header -->
-    <header class="bg-white shadow-md sticky top-0 z-50">
-        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-bold text-blue-900">Школа №100</a>
-            <div class="hidden md:flex space-x-6">
-                <a href="index.html" class="hover:text-blue-900">Головна</a>
-                <a href="about.html" class="hover:text-blue-900">Про школу</a>
-                <a href="education.html" class="hover:text-blue-900">Освітній процес</a>
-                <a href="parents-students.html" class="text-blue-900 font-semibold">Батькам та учням</a>
-                <a href="contacts.html" class="hover:text-blue-900">Контакти</a>
-            </div>
-            <button class="md:hidden" id="mobile-menu-button">
-                <i data-lucide="menu"></i>
-            </button>
+<body>
+    <header>
+        <h1>Назва вашої школи</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="about.html">Про школу</a></li>
+                <li><a href="contacts.html">Контакти</a></li>
+            </ul>
         </nav>
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
-            <a href="index.html" class="block py-2 hover:text-blue-900">Головна</a>
-            <a href="about.html" class="block py-2 hover:text-blue-900">Про школу</a>
-            <a href="education.html" class="block py-2 hover:text-blue-900">Освітній процес</a>
-            <a href="parents-students.html" class="block py-2 text-blue-900 font-semibold">Батькам та учням</a>
-            <a href="contacts.html" class="block py-2 hover:text-blue-900">Контакти</a>
-        </div>
     </header>
-
-    <!-- Main Content -->
-    <main class="container mx-auto px-6 py-8">
-        <h1 class="text-4xl font-bold text-center mb-12">Для батьків та учнів</h1>
-
-        <!-- Cafeteria Menu -->
-        <section class="mb-12 bg-white p-8 rounded-lg shadow-md">
-            <h2 class="text-3xl font-bold mb-6 flex items-center"><i data-lucide="utensils" class="mr-4 text-yellow-500"></i>Меню їдальні</h2>
-            <p class="mb-4">Орієнтовне меню на тиждень. Можливі зміни.</p>
-            <div class="overflow-x-auto">
-                <table class="min-w-full divide-y divide-gray-200">
-                    <thead class="bg-gray-50">
-                        <tr>
-                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">День</th>
-                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Страви</th>
-                        </tr>
-                    </thead>
-                    <tbody class="bg-white divide-y divide-gray-200">
-                        <tr>
-                            <td class="px-6 py-4 whitespace-nowrap font-medium">Понеділок</td>
-                            <td class="px-6 py-4 whitespace-nowrap">Суп, гречана каша з котлетою, салат, компот</td>
-                        </tr>
-                        <tr>
-                            <td class="px-6 py-4 whitespace-nowrap font-medium">Вівторок</td>
-                            <td class="px-6 py-4 whitespace-nowrap">Борщ, картопляне пюре з рибою, салат, чай</td>
-                        </tr>
-                        <!-- Add more days -->
-                    </tbody>
-                </table>
-            </div>
-        </section>
-
-        <!-- Psychological Support -->
-        <section class="mb-12 bg-blue-50 p-8 rounded-lg">
-            <h2 class="text-3xl font-bold mb-6 flex items-center"><i data-lucide="heart-handshake" class="mr-4 text-blue-500"></i>Психологічна підтримка</h2>
-            <p class="mb-4">Наша школа дбає про психологічний комфорт учнів. Шкільний психолог завжди готовий допомогти у вирішенні складних питань, надати консультацію та підтримку.</p>
-            <div class="bg-white p-6 rounded-lg shadow-sm">
-                <p class="font-bold">Психолог: Шевченко Олена Петрівна</p>
-                <p>Години прийому: Пн-Пт, 10:00 - 15:00</p>
-                <p>Кабінет: 205</p>
-            </div>
-        </section>
-
-        <!-- Extracurricular Activities -->
-        <section class="bg-white p-8 rounded-lg shadow-md">
-            <h2 class="text-3xl font-bold mb-6 flex items-center"><i data-lucide="gamepad-2" class="mr-4 text-green-500"></i>Позакласні заходи та гуртки</h2>
-            <p class="mb-4">Ми пропонуємо широкий вибір гуртків та секцій для розвитку талантів та інтересів учнів.</p>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="border p-4 rounded-lg"><strong>Спортивні секції:</strong> Футбол, баскетбол, волейбол.</div>
-                <div class="border p-4 rounded-lg"><strong>Творчі гуртки:</strong> Малювання, ліплення, театральна студія.</div>
-                <div class="border p-4 rounded-lg"><strong>Предметні гуртки:</strong> Юний математик, клуб англійської мови.</div>
-                <div class="border p-4 rounded-lg"><strong>Інше:</strong> Шаховий клуб, робототехніка.</div>
-            </div>
-        </section>
-
+    <main>
+        <h2>Батькам та учням</h2>
+        <p>Корисна інформація для батьків та учнів.</p>
     </main>
-
-    <!-- Footer -->
-    <footer class="bg-blue-900 text-white mt-12">
-        <div class="container mx-auto px-6 py-8 grid md:grid-cols-3 gap-8">
-            <div>
-                <h3 class="text-xl font-bold mb-4">Школа №100</h3>
-                <p>Освітній простір для вашого майбутнього.</p>
-            </div>
-            <div>
-                <h3 class="text-xl font-bold mb-4">Швидкі посилання</h3>
-                <ul>
-                    <li><a href="about.html" class="hover:text-yellow-400">Про школу</a></li>
-                    <li><a href="education.html" class="hover:text-yellow-400">Освітній процес</a></li>
-                    <li><a href="parents-students.html" class="hover:text-yellow-400">Батькам та учням</a></li>
-                </ul>
-            </div>
-            <div>
-                <h3 class="text-xl font-bold mb-4">Слідкуйте за нами</h3>
-                <div class="flex space-x-4">
-                    <a href="#" class="hover:text-yellow-400"><i data-lucide="facebook"></i></a>
-                    <a href="#" class="hover:text-yellow-400"><i data-lucide="instagram"></i></a>
-                    <a href="#" class="hover:text-yellow-400"><i data-lucide="youtube"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="bg-blue-950 text-center py-4">
-            <p>&copy; 2024 Запорізька школа №100. Всі права захищені.</p>
-        </div>
+    <footer>
+        <p>&copy; 2024 Назва вашої школи. Всі права захищено.</p>
     </footer>
-
-    <script>
-        lucide.createIcons();
-
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-    </script>
-
 </body>
 </html>

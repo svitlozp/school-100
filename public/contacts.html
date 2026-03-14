@@ -3,146 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Контакти - Запорізька школа №100</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <title>Контакти - Назва вашої школи</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-gray-100 text-gray-800">
-
-    <!-- Header -->
-    <header class="bg-white shadow-md sticky top-0 z-50">
-        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-bold text-blue-900">Школа №100</a>
-            <div class="hidden md:flex space-x-6">
-                <a href="index.html" class="hover:text-blue-900">Головна</a>
-                <a href="about.html" class="hover:text-blue-900">Про школу</a>
-                <a href="education.html" class="hover:text-blue-900">Освітній процес</a>
-                <a href="parents-students.html" class="hover:text-blue-900">Батькам та учням</a>
-                <a href="contacts.html" class="text-blue-900 font-semibold">Контакти</a>
-            </div>
-            <button class="md:hidden" id="mobile-menu-button">
-                <i data-lucide="menu"></i>
-            </button>
+<body>
+    <header>
+        <h1>Назва вашої школи</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="about.html">Про школу</a></li>
+                <li><a href="contacts.html">Контакти</a></li>
+            </ul>
         </nav>
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
-            <a href="index.html" class="block py-2 hover:text-blue-900">Головна</a>
-            <a href="about.html" class="block py-2 hover:text-blue-900">Про школу</a>
-            <a href="education.html" class="block py-2 hover:text-blue-900">Освітній процес</a>
-            <a href="parents-students.html" class="block py-2 hover:text-blue-900">Батькам та учням</a>
-            <a href="contacts.html" class="block py-2 text-blue-900 font-semibold">Контакти</a>
-        </div>
     </header>
-
-    <!-- Main Content -->
-    <main class="container mx-auto px-6 py-8">
-        <h1 class="text-4xl font-bold text-center mb-12">Наші контакти</h1>
-
-        <div class="grid md:grid-cols-2 gap-12">
-            <!-- Contact Info and Form -->
-            <div class="bg-white p-8 rounded-lg shadow-md">
-                <h2 class="text-2xl font-bold mb-6">Зв'яжіться з нами</h2>
-                
-                <!-- Address -->
-                <div class="flex items-start mb-4">
-                    <i data-lucide="map-pin" class="w-6 h-6 mr-4 text-blue-900 mt-1"></i>
-                    <div>
-                        <h3 class="font-bold">Адреса:</h3>
-                        <p>вул. Освітня, 1, м. Запоріжжя, 69000</p>
-                    </div>
-                </div>
-                
-                <!-- Phone -->
-                <div class="flex items-start mb-4">
-                    <i data-lucide="phone" class="w-6 h-6 mr-4 text-blue-900 mt-1"></i>
-                    <div>
-                        <h3 class="font-bold">Телефон:</h3>
-                        <p>(061) 123-45-67</p>
-                    </div>
-                </div>
-
-                <!-- Email -->
-                <div class="flex items-start mb-6">
-                    <i data-lucide="mail" class="w-6 h-6 mr-4 text-blue-900 mt-1"></i>
-                    <div>
-                        <h3 class="font-bold">E-mail:</h3>
-                        <p>school100@example.com</p>
-                    </div>
-                </div>
-
-                <!-- Contact Form -->
-                <form>
-                    <div class="mb-4">
-                        <label for="name" class="block text-sm font-medium text-gray-700">Ім'я</label>
-                        <input type="text" id="name" name="name" class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
-                    </div>
-                    <div class="mb-4">
-                        <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
-                        <input type="email" id="email" name="email" class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
-                    </div>
-                    <div class="mb-4">
-                        <label for="message" class="block text-sm font-medium text-gray-700">Повідомлення</label>
-                        <textarea id="message" name="message" rows="4" class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"></textarea>
-                    </div>
-                    <button type="submit" class="w-full bg-blue-900 text-white py-2 px-4 rounded-md hover:bg-blue-800 transition-colors">Надіслати</button>
-                </form>
-            </div>
-
-            <!-- Map -->
-            <div class="rounded-lg shadow-md overflow-hidden">
-                <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2678.337441549114!2d35.1310113156384!3d47.8384239791864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dc674e2d36b07b%3A0x5a7f4e928502c89f!2sZaporizhzhia%20Collegium-School%20No.%2098!5e0!3m2!1sen!2sua!4v1678886919702!5m2!1sen!2sua"
-                    width="100%" 
-                    height="100%" 
-                    style="border:0; min-height: 400px;"
-                    allowfullscreen="" 
-                    loading="lazy" 
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-            </div>
-        </div>
+    <main>
+        <h2>Наші контакти</h2>
+        <p>Тут буде адреса, телефон, email та інша контактна інформація.</p>
     </main>
-
-    <!-- Footer -->
-    <footer class="bg-blue-900 text-white mt-12">
-        <div class="container mx-auto px-6 py-8 grid md:grid-cols-3 gap-8">
-            <div>
-                <h3 class="text-xl font-bold mb-4">Школа №100</h3>
-                <p>Освітній простір для вашого майбутнього.</p>
-            </div>
-            <div>
-                <h3 class="text-xl font-bold mb-4">Швидкі посилання</h3>
-                <ul>
-                    <li><a href="about.html" class="hover:text-yellow-400">Про школу</a></li>
-                    <li><a href="education.html" class="hover:text-yellow-400">Освітній процес</a></li>
-                    <li><a href="parents-students.html" class="hover:text-yellow-400">Батькам та учням</a></li>
-                </ul>
-            </div>
-            <div>
-                <h3 class="text-xl font-bold mb-4">Слідкуйте за нами</h3>
-                <div class="flex space-x-4">
-                    <a href="#" class="hover:text-yellow-400"><i data-lucide="facebook"></i></a>
-                    <a href="#" class="hover:text-yellow-400"><i data-lucide="instagram"></i></a>
-                    <a href="#" class="hover:text-yellow-400"><i data-lucide="youtube"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="bg-blue-950 text-center py-4">
-            <p>&copy; 2024 Запорізька школа №100. Всі права захищені.</p>
-        </div>
+    <footer>
+        <p>&copy; 2024 Назва вашої школи. Всі права захищено.</p>
     </footer>
-
-    <script>
-        lucide.createIcons();
-
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-    </script>
-
 </body>
 </html>
