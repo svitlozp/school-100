@@ -3,28 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Батькам та учням - Назва вашої школи</title>
+    <title>Батькам та учням - Ліцей "Світло"</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Назва вашої школи</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Головна</a></li>
-                <li><a href="about.html">Про школу</a></li>
-                <li><a href="education.html">Освіта</a></li>
-                <li><a href="parents-students.html">Батькам та учням</a></li>
-                <li><a href="contacts.html">Контакти</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>Ліцей "Світло"</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="about.html">Про ліцей</a></li>
+                    <li><a href="education.html">Освіта</a></li>
+                    <li><a href="parents-students.html" class="active">Батькам та учням</a></li>
+                    <li><a href="contacts.html">Контакти</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+
     <main>
-        <h2>Інформація для батьків та учнів</h2>
-        <p>Корисна інформація, оголошення, правила для батьків та учнів.</p>
+        <div class="container">
+            <section class="section">
+                <h2>Важлива інформація</h2>
+                <p>Цей розділ створений для зручності учнів та їхніх батьків. Тут ви знайдете всю необхідну інформацію про навчальний процес, правила та корисні ресурси.</p>
+            </section>
+
+            <section class="section-bg">
+                <h2>Корисні посилання</h2>
+                <div class="card-container">
+                    <div class="card">
+                        <h3>Розклад занять</h3>
+                        <p>Актуальний розклад уроків та позакласних занять. Оновлюється щотижня. (Тут може бути посилання на документ або вбудований календар).</p>
+                    </div>
+                    <div class="card">
+                        <h3>Правила ліцею</h3>
+                        <p>Ознайомтеся з правилами внутрішнього розпорядку, яких дотримується наша шкільна спільнота для створення безпечного та продуктивного середовища.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Електронний щоденник</h3>
+                        <p>Доступ до електронного щоденника для відстеження успішності, домашніх завдань та комунікації з вчителями. (Тут може бути посилання на систему).</p>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
+
     <footer>
-        <p>&copy; 2024 Назва вашої школи. Всі права захищено.</p>
+        <p>&copy; 2024 Ліцей "Світло". Всі права захищено.</p>
     </footer>
 </body>
 </html>
